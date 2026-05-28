@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+<!-- 
+
+	<bean id="std" class="com.Ioc.Student">
+	<property name="id" value="567"></property>
+	<property name="name" value="Shruti"></property>
+	<property name="City" value="Pune"></property>
+
+</bean>
+
+ 
+    <bean id="clg" class="com.Ioc.College">
+	<property name="collegeId" value="1"></property>
+	<property name="cName" value="JSPM"></property>
+	<property name="std" ref="stud"></property>
+
+</bean>
+
+-->
+
+ <bean id="std" class="com.Ioc.Student">
+ <constructor-arg index="0"  value="234"> </constructor-arg>
+ <constructor-arg index="1"  value="Shyam"> </constructor-arg>
+ <constructor-arg index="2"  value="nsk"> </constructor-arg>
+ 
+ 
+ </bean>
+
+<bean id="std" class="com.Ioc.College">
+ <constructor-arg index="0"  value="2"> </constructor-arg>
+ <constructor-arg index="1"  value="Dy Patil"> </constructor-arg>
+ <constructor-arg index="2"  ref="stud"> </constructor-arg>
+ 
+ 
+ </bean>
+
+</beans>
+
+
+
+
+
